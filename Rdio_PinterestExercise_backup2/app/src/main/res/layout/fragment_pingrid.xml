@@ -1,0 +1,57 @@
+
+ <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/layout_padding_margin"
+        android:paddingRight="@dimen/layout_padding_margin">
+
+     <LinearLayout
+         android:id="@+id/lnrPin"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+         <TextView
+             android:id="@+id/txtUser"
+             android:layout_width="match_parent"
+             android:layout_height="25dp"
+             android:layout_gravity="center_horizontal"
+             android:textColor="@android:color/white"
+             android:background="@android:color/darker_gray"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             android:singleLine="true"
+             android:ellipsize="end"
+             android:gravity="center_horizontal"
+             android:paddingLeft="@dimen/layout_padding_margin"
+             android:paddingRight="@dimen/layout_padding_margin"/>
+
+         <GridView
+             android:id="@+id/gridView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="@dimen/layout_padding_margin"
+             android:gravity="center"
+             android:horizontalSpacing="@dimen/grid_spacing"
+             android:numColumns="3"
+             android:stretchMode="columnWidth"
+             android:verticalSpacing="@dimen/grid_spacing"
+
+             >
+         </GridView>
+         </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtNoPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_pins"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+           android:layout_gravity="center"
+            android:visibility="gone" />
+        </FrameLayout>
+
+
